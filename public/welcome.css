@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
+
+:root {
+    /* -- Colors -- */
+    --body-color: #dddddd;
+    --sidebar-color: #ffffff;
+    --primary-color: #0099cc;
+    --primary-color-light: #d6d6d6;
+    --toggle-color: #9b9b9b;
+    --text-color: #707070;
+    --short-color: #0099cc;
+    --shawdow-color: #383838;
+    --special-color: #758ed3 0%, #9733ee 51%, #da22ff 100%;
+
+    /*--- Transition ---*/
+    --tran-02: all 0.2s ease;
+    --tran-03: all 0.3s ease;
+    --tran-04: all 0.4s ease;
+    --tran-05: all 0.5s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    background: var(--body-color);
+    width: 410px;
+    padding: 30px;
+    box-shadow: 0 0 10px var(--shawdow-color);
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container .text {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.container form {
+    margin-top: -20px;
+}
+
+.container form .data {
+    height: 45px;
+    width: 100%;
+    margin: 40px 0;
+}
+
+form .data input {
+    height: 100%;
+    width: 100%;
+    padding-left: 10px;
+    font-size: 17px;
+    border: 1px solid silver;
+}
+
+form .data input:focus {
+    border-color: var(--primary-color);
+    border-bottom-width: 2px;
+}
+
+form .forgot-pass {
+    margin-top: -8px;
+}
+
+form .forgot-pass a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+form .forgot-pass a:hover {
+    text-decoration: underline;
+}
+
+form .signup-link {
+    text-align: center;
+}
+
+form .signup-link a {
+    color: var(--primary-color);
+    text-decoration: none;
+    float: left;
+}
+
+form .signup-link a:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.textCenter {
+    text-align: center;
+}
+
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    padding: 5px;
+}
+.btn-grad {
+    background-image: linear-gradient(to right, var(--special-color));
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    text-transform: lowercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: var(--primary-color-light);
+    display: block;
+    text-decoration: none;
+
+    font-size: 18px;
+    width: 320px;
+    height: 60px;
+    border: none;
+}
+
+.btn-grad:hover {
+    background-position: right center;
+    color: var(--primary-color-light);
+    text-decoration: none;
+}
+.log-in {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.back-pass {
+    margin-top: -8px;
+}
+
+.back-pass a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.back-pass a:hover {
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.selection-form{
+    width: 215px;
+    height: 50px;
+    text-align: center;
+    font-size: 18px;
+    margin: 15px;
+    border-style: none;
+    transition: var(--tran-03);
+}

@@ -1,0 +1,109 @@
+:root {
+    /* ===== Colors ===== */
+    --primary-color: #0e4bf1;
+    --panel-color: #fff;
+    --text-color: #000;
+    --black-light-color: #707070;
+    --border-color: #e6e5e5;
+    --toggle-color: #ddd;
+    --box1-color: #8ac1fc;
+    --box2-color: #ffe6ac;
+    --box3-color: #f3c0c0;
+    --title-icon-color: #fff;
+    --process-circular-color: #7d2ae8;
+
+    /* ====== Transition ====== */
+    --tran-05: all 0.5s ease;
+    --tran-03: all 0.3s ease;
+    --tran-03: all 0.2s ease;
+}
+body.dark {
+    --primary-color: #3a3b3c;
+    --panel-color: #242526;
+    --text-color: #ccc;
+    --black-light-color: #ccc;
+    --border-color: #4d4c4c;
+    --toggle-color: #fff;
+    --box1-color: #3a3b3c;
+    --box2-color: #3a3b3c;
+    --box3-color: #3a3b3c;
+    --title-icon-color: #ccc;
+
+    --process-circular-color: #ccc;
+}
+.dash-content .subject-boxes {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+}
+.dash-content .subject-boxes .subject-box {
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    width: 340px;
+    height: 200px;
+    padding: 15px 20px;
+    background-color: var(--box1-color);
+    transition: var(--tran-05);
+    margin: 5px;
+    border: none;
+
+}
+.subject-boxes .subject-box i {
+    font-size: 35px;
+    color: var(--text-color);
+    padding: 5px;
+}
+.subject-boxes .subject-box .text a {
+    text-decoration: none;
+}
+.subject-boxes .subject-box .text {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+@media (max-width: 780px) {
+    .dash-content .subject-boxes .box {
+        width: calc(100% / 2 - 15px);
+        margin-top: 15px;
+    }
+}
+@media (max-width: 560px) {
+    .dash-content .subject-boxes .box {
+        width: 100%;
+    }
+}
+.detail-button {
+    background-color: var(--box3-color);
+    border: none;
+    color: var(--text-color);
+    padding: 5px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition: var(--tran-03);
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.detail-button:hover {
+    background: var(--box2-color);
+}
+.subject-button{
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    transition: var(--tran-03);
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--text-color);
+
+}
+ .subject-button:hover{
+    color: var(--process-circular-color);
+ }
